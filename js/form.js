@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const consentCheckbox = document.getElementById("consent");
   const submitButton = document.getElementById("submit-button");

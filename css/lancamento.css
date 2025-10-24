@@ -36,8 +36,9 @@ img.photocar {
     text-align: left;
     font-size: 14px;
     color: #1351d8;
-    
+
 }
+
 .textprice {
     display: block;
     text-align: left;
@@ -51,19 +52,22 @@ table {
     margin-right: auto;
     margin-top: 2vh;
     margin-bottom: 10px;
-  }
-  
-  th, td {
+}
+
+th,
+td {
     text-align: left;
     padding: 8px;
-  }
+}
 
-  td:nth-child(1) {  
+td:nth-child(1) {
     font-weight: 700;
     width: 40%;
-  }
+}
 
-  tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
 div#compare {
     position: absolute;
@@ -82,4 +86,3 @@ div#compare {
     -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
     box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
 }
-
