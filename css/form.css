@@ -41,12 +41,25 @@ h2 {
     font-weight: 800;
 }
 
-
-button {
+#submit-button {
     width: 200px;
     height: 40px;
     margin-right: 8px;
     float: right;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#submit-button:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+    background-color: #1351d8;
+}
+
+button:hover {
+    background-color: #003399;
+    color: white;
+    cursor: pointer;
 }
 
 .titulo {

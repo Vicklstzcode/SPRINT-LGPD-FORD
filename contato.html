@@ -1,83 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ford</title>    
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
-    <script src="js/form.js"></script>
-</head>
-<body>
-    <header>       
-        <div>
-            <img src="img/logo-ford-256.png" width="150" class="logo" />
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="lancamento.html">Lançamento</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
-    <main>
-        <div class="forms">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ford</title>
+        <link href="css/reset.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/form.css" rel="stylesheet" />
+        <script src="js/form.js"></script>
+    </head>
+    <body>
+        <header>
             <div>
-                <img src="img/xls 2.2 diesel.jpg">
+                <img
+                    src="img/logo-ford-256.png"
+                    width="150"
+                    class="logo"
+                    alt="Logo Ford" />
             </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="lancamento.html">Lançamento</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="forms">
+                <div>
+                    <img src="img/xls 2.2 diesel.jpg"
+                        alt="Ford Ranger XLS 2.2 Diesel" />
+                </div>
+                <div>
+                    <h2 class="titulo">Sobre Você</h2>
+                    <form id="contact-form">
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="NOME*"
+                            class="fordform"
+                            required />
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="E-MAIL*"
+                            class="fordform"
+                            required />
+                        <input
+                            type="text"
+                            id="cpf"
+                            name="cpf"
+                            placeholder="CPF*"
+                            class="fordform"
+                            required />
+                        <input
+                            type="text"
+                            id="sobrenome"
+                            name="sobrenome"
+                            placeholder="SOBRENOME*"
+                            class="fordform"
+                            required />
+                        <input
+                            type="text"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="TELEFONE*"
+                            class="fordform"
+                            required />
+                        <select id="contato" name="contato" class="fordform"
+                            required>
+                            <option selected disabled value>
+                                COMO DESEJA SER CONTATADO
+                            </option>
+                            <option value="telefone">TELEFONE</option>
+                            <option value="email">E-MAIL</option>
+                        </select>
+                        <p class="privacy-notice">
+                            Os dados serão mantidos em nossa base de dados, só
+                            enquanto for
+                            desejado por você. <br />
+                            A qualquer momento, será possível editar ou remover
+                            tais dados.
+                            Para mais detalhes, consulte nossos
+                            <a
+                                href="https://www.ford.com.br/politica-de-privacidade/"
+                                target="_blank"
+                                rel="noopener noreferrer">Termos e
+                                Condições.</a>
+                        </p>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="consent" name="consent"
+                                required />
+                            <label for="consent">
+                                Sim. Li e concordo com os Termos e
+                                Condições.</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input
+                                type="checkbox"
+                                id="consent-newsletter"
+                                name="consent-newsletter" />
+                            <label for="consent-newsletter">
+                                Sim. Também quero receber descontos e
+                                novidades.</label>
+                        </div>
+                        <div class="submit-wrapper">
+                            <button type="submit" id="submit-button"
+                                disabled>Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav id="social">
+                <ul>
+                    <li><span class="redesociais">Redes Sociais</span></li>
+                    <li>
+                        <a href="#" title="Facebook"><img
+                                src="img/facebook-50.png" alt="Facebook" /></a>
+                    </li>
+                    <li>
+                        <a href="#" title="YouTube"><img
+                                src="img/youtube-squared-50.png"
+                                alt="YouTube" /></a>
+                    </li>
+                    <li>
+                        <a href="#" title="Instagram"><img
+                                src="img/instagram-logo-50.png"
+                                alt="Instagram" /></a>
+                    </li>
+                </ul>
+            </nav>
             <div>
-                <h2 class="titulo">Sobre Você</h2>
-                <form id="contact-form">
-                    <input type="text" id="nome" name="nome" placeholder="NOME*" class="fordform" required>
-                    <input type="text" id="email" name="email" placeholder="E-MAIL*" class="fordform" required>
-                    <input type="text" id="cpf" name="cpf" placeholder="CPF*" class="fordform" required>
-                    <input type="text" id="sobrenome" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
-                    <input type="text" id="telefone" name="telefone" placeholder="TELEFONE*" class="fordform" required>
-                    <select id="contato" name="contato" class="fordform" required>
-                        <option selected disabled value="">COMO DESEJA SER CONTATADO</option>
-                        <option>TELEFONE</option>
-                        <option>E-MAIL</option>
-                    </select>
-                    <p class="privacy-notice">Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. <br> A qualquer momento, será possível editar ou remover tais dados.</p>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="consent" name="consent" required>
-                        <label for="consent"> Sim. Li e concordo com os <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank" rel="noopener noreferrer">Termos e Condições.</a></label>
-                    </div>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="consent-newsletter" name="consent-newsletter">
-                        <label for="consent-newsletter"> Sim. Também quero receber descontos e novidades.</label>
-                    </div>
-                    <div class="submit-wrapper">
-                        <button type="submit" id="submit-button" disabled>Enviar</button>
-                        <p id="consent-error" class="error-message">Obs: Para continuar, você deve aceitar os Termos e Condições.</p>
-                    </div>
-                </form>
+                <img src="img/ford-96.png" width="70" alt="Logo Ford" />
             </div>
-        </div>
-    </main>
-    <footer>
-        <nav id="social">
-            <ul>
-                <li><span class="redesociais">Redes Sociais</span></li>
-                <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
-                <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
-                <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
-            </ul>
-        </nav>
-        <div>
-           <img src="img/ford-96.png" width="70"  />
-        </div>
-    </footer>
-
-</body>
+        </footer>
+    </body>
 </html>
