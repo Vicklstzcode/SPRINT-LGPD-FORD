@@ -1,0 +1,303 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap");
+
+body {
+  background: #ffffff;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+div#carousel {
+  height: 80vh;
+  width: 100%;
+  max-height: 720px;
+  -webkit-transition: background-image 0.5s ease-in-out;
+  -moz-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+div#carousel-title a {
+  text-decoration: none;
+  color: #1351d8;
+  transition: color 0.3s;
+}
+
+div#carousel-title a:hover {
+  color: #1b357e;
+}
+
+div#carousel-title {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+header ul {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+ul {
+  display: inline-block;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+header div {
+  display: inline;
+  vertical-align: middle;
+}
+
+header nav {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80vw;
+}
+
+header nav a {
+  color: #1351d8;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 900;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+header nav a:hover {
+  color: #1b357e;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+}
+
+main {
+  min-height: calc(100% - 167px);
+}
+
+nav#social {
+  display: inline;
+  width: 80%;
+}
+
+nav#social ul img {
+  width: 28px;
+  transition: transform 0.3s;
+}
+
+nav#social ul a:hover img {
+  transform: scale(1.1);
+}
+
+span.redesociais {
+  color: #ffffff;
+  vertical-align: super;
+}
+
+footer {
+  background: #1b357e;
+  padding: 20px;
+}
+
+footer div {
+  display: inline;
+  float: right;
+  margin-right: 40px;
+}
+
+button:hover {
+  background: #1b357e;
+}
+
+button {
+  background: #1351d8;
+  color: #fff;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.botao-carrossel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  z-index: 100;
+  transition: background-color 0.3s;
+}
+
+.anterior {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.proximo {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.botao-carrossel:hover {
+  background-color: rgba(27, 53, 126, 0.9);
+}
+
+/* Indicadores do carrossel */
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.indicator.active {
+  background-color: #1351d8;
+  border-color: #ffffff;
+  transform: scale(1.2);
+}
+
+.indicator:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsividade para Tablet */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  header div {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  header nav {
+    display: block;
+    width: 100%;
+  }
+
+  header nav a {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  div#carousel {
+    height: 50vh;
+    max-height: 400px;
+  }
+
+  div#carousel-title {
+    font-size: 16px;
+  }
+
+  .botao-carrossel {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .carousel-indicators {
+    bottom: 15px;
+    gap: 8px;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+
+  footer div {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  nav#social {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 480px) {
+  header nav a {
+    font-size: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  div#carousel {
+    height: 40vh;
+    max-height: 300px;
+  }
+
+  div#carousel-title {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .botao-carrossel {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .carousel-indicators {
+    bottom: 10px;
+    gap: 6px;
+  }
+
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
+
+  nav#social ul img {
+    width: 24px;
+  }
+}
+/* Fim do arquivo style.css */
