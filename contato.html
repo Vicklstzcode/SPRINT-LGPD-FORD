@@ -49,20 +49,23 @@
                         <option>E-MAIL</option>
                     </select>
                     
-                    <p class="privacy-notice">Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. <br> A qualquer momento, será possível editar ou remover tais dados.</p> <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank" rel="noopener noreferrer">Termos e Condições.</a></label>
                     
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="consent" name="consent" required>
-                        <label for="consent"> Sim. Li e concordo com os Termos e Condições.</a></label>
+                    
+                    <div class="txtLGPD">
+                        <p class="privacy-notice">Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. <br> A qualquer momento, será possível editar ou remover tais dados.</p> <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank" rel="noopener noreferrer">Termos e Condições.</a></label>
                     </div>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="consent-newsletter" name="consent-newsletter">
-                        <label for="consent-newsletter"> Sim. Também quero receber descontos e novidades.</label>
+
+                    <div class="txtLGPD">
+                        <input type="checkbox" name="" id="check1" onchange="desbloquear(this)">
+                        <label for="check1">Sim. Li e concordo com os Termos e Condições.</label>
                     </div>
-                    <div class="submit-wrapper">
-                        <button type="submit" id="submit-button" disabled>Enviar</button>
+
+                    <div class="textLGPD">
+                        <input type="checkbox" name="" id="check2">
+                        <label for="check2">Sim. Também quero receber descontos e novidades.</label>
                         <p id="consent-error" class="error-message">Obs: Para continuar, você deve aceitar os Termos e Condições.</p>
                     </div>
+                    <button type="submit" disabled id="btnLGPD" class="off">Enviar</button>
                 </form>
             </div>
         </div>
