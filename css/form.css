@@ -1,9 +1,8 @@
-/* Adiciona um reset de box-sizing para facilitar o layout */
+
 * {
     box-sizing: border-box;
 }
 
-/* Classe para esconder labels, mas mantê-las para leitores de tela */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -16,22 +15,20 @@
     border: 0;
 }
 
-/* Regras .fordform unificadas e corrigidas */
 .fordform {
     display: block;
-    width: 310px; /* Largura unificada */
-    height: 40px; /* Altura unificada */
+    width: 310px;
+    height: 40px;
     border: 1px solid #cccccc;
     border-radius: 10px;
-    margin: 15px 8px; /* Margem unificada */
+    margin: 15px 8px;
     padding: 5px;
-    font-size: 15px; /* CORREÇÃO CRÍTICA: 1e5px (100000px) mudado para 15px */
+    font-size: 15px;
     color: #666;
     line-height: 1.05;
 }
 
 select.fordform {
-    /* A altura e largura já são herdadas de .fordform */
     color: #807d7d;
 }
 
@@ -61,13 +58,11 @@ h2 {
 button {
     width: 200px;
     height: 40px;
-    /* float: right; -- Removido */
 }
 
-/* Novo container para alinhar o botão */
 .button-container {
     text-align: right;
-    margin-right: 8px; /* Mantém o espaçamento original */
+    margin-right: 8px;
 }
 
 .titulo {
@@ -81,10 +76,9 @@ button {
     padding: 10px 10px 10px 0px;
     text-align: left;
     font-size: 15px;
-    /* Permite que o conteúdo quebre a linha se não couber */
     flex-wrap: wrap; 
 }
 
 .txtLGPD input[type="checkbox"] {
-    margin-right: 8px; /* Aumentado de 0.9px para um espaçamento melhor */
+    margin-right: 8px;
 }

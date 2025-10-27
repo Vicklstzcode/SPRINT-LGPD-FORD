@@ -108,4 +108,3 @@ function mudarSlide(direction) {
   }
   Carousel.resetAutoPlay();
 }
-// Fim do arquivo carousel.js
