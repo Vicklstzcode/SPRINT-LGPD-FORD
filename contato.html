@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ford</title>    
+    <title>Ford</title>     
     <link href="css/reset.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
     <script src="js/form.js"></script>
 </head>
 <body>
@@ -28,8 +28,8 @@
                 </li>
             </ul>
         </nav>
-
     </header>
+    
     <main>
         <div class="forms">
             <div>
@@ -38,38 +38,52 @@
             <div>
                 <h2 class="titulo">Sobre Você</h2>
                 <form id="contact-form">
+                    
+                    <label for="nome" class="visually-hidden">Nome*</label>
                     <input type="text" id="nome" name="nome" placeholder="NOME*" class="fordform" required>
-                    <input type="text" id="email" name="email" placeholder="E-MAIL*" class="fordform" required>
+                    
+                    <label for="email" class="visually-hidden">E-mail*</label>
+                    <input type="email" id="email" name="email" placeholder="E-MAIL*" class="fordform" required>
+                    
+                    <label for="cpf" class="visually-hidden">CPF*</label>
                     <input type="text" id="cpf" name="cpf" placeholder="CPF*" class="fordform" required>
+                    
+                    <label for="sobrenome" class="visually-hidden">Sobrenome*</label>
                     <input type="text" id="sobrenome" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
-                    <input type="text" id="telefone" name="telefone" placeholder="TELEFONE*" class="fordform" required>
+                    
+                    <label for="telefone" class="visually-hidden">Telefone*</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="TELEFONE*" class="fordform" required>
+                    
+                    <label for="contato" class="visually-hidden">Como deseja ser contatado</label>
                     <select id="contato" name="contato" class="fordform" required>
                         <option selected disabled value="">COMO DESEJA SER CONTATADO</option>
                         <option>TELEFONE</option>
                         <option>E-MAIL</option>
                     </select>
                     
-                    
-                    
                     <div class="txtLGPD">
-                        <p class="privacy-notice">Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. <br> A qualquer momento, será possível editar ou remover tais dados.</p> <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank" rel="noopener noreferrer">Termos e Condições.</a></label>
+                        <p class="privacy-notice">Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. <br> A qualquer momento, será possível editar ou remover tais dados.</p> 
                     </div>
-
+                    
                     <div class="txtLGPD">
                         <input type="checkbox" name="" id="check1" onchange="desbloquear(this)">
-                        <label for="check1">Sim. Li e concordo com os Termos e Condições.</label>
+                        <label for="check1">Sim. Li e concordo com os <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank" rel="noopener noreferrer">Termos e Condições.</a></label>
                     </div>
-
-                    <div class="textLGPD">
+                    
+                    <div class="txtLGPD"> 
                         <input type="checkbox" name="" id="check2">
                         <label for="check2">Sim. Também quero receber descontos e novidades.</label>
                         <p id="consent-error" class="error-message">Obs: Para continuar, você deve aceitar os Termos e Condições.</p>
                     </div>
-                    <button type="submit" disabled id="btnLGPD" class="off">Enviar</button>
+                    
+                    <div class="button-container">
+                        <button type="submit" disabled id="btnLGPD" class="off">Enviar</button>
+                    </div>
                 </form>
             </div>
         </div>
     </main>
+    
     <footer>
         <nav id="social">
             <ul>
@@ -80,7 +94,7 @@
             </ul>
         </nav>
         <div>
-           <img src="img/ford-96.png" width="70"  />
+           <img src="img/ford-96.png" width="70"   />
         </div>
     </footer>
 

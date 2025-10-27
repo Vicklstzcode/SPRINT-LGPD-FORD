@@ -1,24 +1,41 @@
+/* Adiciona um reset de box-sizing para facilitar o layout */
+* {
+    box-sizing: border-box;
+}
+
+/* Classe para esconder labels, mas mantê-las para leitores de tela */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Regras .fordform unificadas e corrigidas */
 .fordform {
     display: block;
-    width: 300px;
+    width: 310px; /* Largura unificada */
+    height: 40px; /* Altura unificada */
     border: 1px solid #cccccc;
     border-radius: 10px;
-    height: 26px;
-    margin: 8px;
-    font-size: 13px;
+    margin: 15px 8px; /* Margem unificada */
     padding: 5px;
+    font-size: 15px; /* CORREÇÃO CRÍTICA: 1e5px (100000px) mudado para 15px */
+    color: #666;
+    line-height: 1.05;
 }
 
 select.fordform {
-    width: 310px;
-    height: 36px;
+    /* A altura e largura já são herdadas de .fordform */
     color: #807d7d;
 }
 
-input:focus-visible {
-    outline: none;
-}
-
+input:focus-visible,
 select:focus-visible {
     outline: none;
 }
@@ -41,35 +58,33 @@ h2 {
     font-weight: 800;
 }
 
-
 button {
     width: 200px;
     height: 40px;
-    margin-right: 8px;
-    float: right;
+    /* float: right; -- Removido */
+}
+
+/* Novo container para alinhar o botão */
+.button-container {
+    text-align: right;
+    margin-right: 8px; /* Mantém o espaçamento original */
 }
 
 .titulo {
     margin-left: 8px;
 }
 
-.privacy-notice {
-    font-size: 15px;
-    color: #666;
-    margin: 15px 8px;
-    text-align: left;
-    line-height: 1.05;
-}
-
-.checkbox-group {
+.txtLGPD {
     display: flex;
     align-items: center;
     margin: 10px 0;
-    padding: 0px 1px 0px 2px;
+    padding: 10px 10px 10px 0px;
     text-align: left;
     font-size: 15px;
+    /* Permite que o conteúdo quebre a linha se não couber */
+    flex-wrap: wrap; 
 }
 
-.checkbox-group input[type="checkbox"] {
-    margin-right: 0.9px;
+.txtLGPD input[type="checkbox"] {
+    margin-right: 8px; /* Aumentado de 0.9px para um espaçamento melhor */
 }
