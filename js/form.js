@@ -27,6 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
           return false;
       }
       
-      alert('Formulário enviado com sucesso!');
+      const nome = document.getElementById('nome').value;
+      
+      alert(`Obrigado pelo contato, ${nome}! Recebemos sua mensagem.`);
+      
+      form.reset();
+      
+      document.getElementById('btnLGPD').disabled = true;
+      document.getElementById('btnLGPD').classList.add('off');
   });
 });
